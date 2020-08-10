@@ -1,0 +1,149 @@
+StartFontMetrics 2.0
+FontName cmex7
+FullName cmex7
+FamilyName cmex7
+Weight Medium
+ItalicAngle 0.000000
+IsFixedPitch false
+UnderlinePosition -133
+UnderlineThickness 20
+Version 1.1/12-Nov-94
+FontBBox -12, -2951, 1627, 770
+Notice Copyright \(C\) 1994, Basil K. Malyshev. All Rights Reserved.\nBaKoMa Fonts Collection, Level-B.
+EncodingScheme FontSpecific
+CapHeight 683
+XHeight 431
+Descender -194
+Ascender 694
+StartCharMetrics 129
+C 0 ; WX 539.17 ; N parenleftbig ; B 185 -1150 479 49 ;
+C 1 ; WX 539.17 ; N parenrightbig ; B 59 -1150 353 49 ;
+C 2 ; WX 493.06 ; N bracketleftbig ; B 237 -1150 454 49 ;
+C 3 ; WX 493.06 ; N bracketrightbig ; B 38 -1150 255 49 ;
+C 4 ; WX 554.56 ; N floorleftbig ; B 237 -1150 516 49 ;
+C 5 ; WX 554.56 ; N floorrightbig ; B 38 -1150 317 49 ;
+C 6 ; WX 554.56 ; N ceilingleftbig ; B 237 -1150 516 49 ;
+C 7 ; WX 554.56 ; N ceilingrightbig ; B 38 -1150 317 49 ;
+C 8 ; WX 677.56 ; N braceleftbig ; B 135 -1150 542 49 ;
+C 9 ; WX 677.56 ; N bracerightbig ; B 135 -1150 542 49 ;
+C 10 ; WX 554.56 ; N angbracketleftbig ; B 124 -1150 455 49 ;
+C 11 ; WX 554.56 ; N angbracketrightbig ; B 99 -1150 430 49 ;
+C 12 ; WX 400.78 ; N vextendsingle ; B 175 -626 226 26 ;
+C 13 ; WX 646.83 ; N vextenddouble ; B 175 -626 471 26 ;
+C 14 ; WX 639.67 ; N slashbig ; B 62 -1150 577 49 ;
+C 15 ; WX 639.67 ; N backslashbig ; B 62 -1150 577 49 ;
+C 16 ; WX 693 ; N parenleftBig ; B 216 -1750 639 49 ;
+C 17 ; WX 693 ; N parenrightBig ; B 53 -1750 476 49 ;
+C 18 ; WX 846.72 ; N parenleftbigg ; B 247 -2350 794 49 ;
+C 19 ; WX 846.72 ; N parenrightbigg ; B 52 -2350 599 49 ;
+C 20 ; WX 616.06 ; N bracketleftbigg ; B 291 -2350 586 49 ;
+C 21 ; WX 616.06 ; N bracketrightbigg ; B 29 -2350 324 49 ;
+C 22 ; WX 677.56 ; N floorleftbigg ; B 291 -2350 648 49 ;
+C 23 ; WX 677.56 ; N floorrightbigg ; B 29 -2350 386 49 ;
+C 24 ; WX 677.56 ; N ceilingleftbigg ; B 291 -2350 648 49 ;
+C 25 ; WX 677.56 ; N ceilingrightbigg ; B 29 -2350 386 49 ;
+C 26 ; WX 862.11 ; N braceleftbigg ; B 160 -2350 701 49 ;
+C 27 ; WX 862.11 ; N bracerightbigg ; B 160 -2350 701 49 ;
+C 28 ; WX 862.11 ; N angbracketleftbigg ; B 155 -2351 739 49 ;
+C 29 ; WX 862.11 ; N angbracketrightbigg ; B 122 -2351 706 49 ;
+C 30 ; WX 1156.33 ; N slashbigg ; B 62 -2350 1093 49 ;
+C 31 ; WX 1156.33 ; N backslashbigg ; B 62 -2350 1093 49 ;
+C 32 ; WX 908.22 ; N parenleftBigg ; B 278 -2950 856 49 ;
+C 33 ; WX 908.22 ; N parenrightBigg ; B 51 -2950 629 49 ;
+C 34 ; WX 677.56 ; N bracketleftBigg ; B 317 -2950 652 49 ;
+C 35 ; WX 677.56 ; N bracketrightBigg ; B 25 -2950 360 49 ;
+C 36 ; WX 739.11 ; N floorleftBigg ; B 317 -2950 713 49 ;
+C 37 ; WX 739.11 ; N floorrightBigg ; B 25 -2950 421 49 ;
+C 38 ; WX 739.11 ; N ceilingleftBigg ; B 317 -2950 713 49 ;
+C 39 ; WX 739.11 ; N ceilingrightBigg ; B 25 -2950 421 49 ;
+C 40 ; WX 923.61 ; N braceleftBigg ; B 173 -2950 750 49 ;
+C 41 ; WX 923.61 ; N bracerightBigg ; B 173 -2950 750 49 ;
+C 42 ; WX 923.61 ; N angbracketleftBigg ; B 170 -2950 791 49 ;
+C 43 ; WX 923.61 ; N angbracketrightBigg ; B 132 -2950 753 49 ;
+C 44 ; WX 1414.67 ; N slashBigg ; B 62 -2950 1352 49 ;
+C 45 ; WX 1414.67 ; N backslashBigg ; B 62 -2950 1352 49 ;
+C 46 ; WX 898 ; N slashBig ; B 62 -1750 835 49 ;
+C 47 ; WX 898 ; N backslashBig ; B 62 -1750 835 49 ;
+C 48 ; WX 1000.5 ; N parenlefttp ; B 339 -1763 950 48 ;
+C 49 ; WX 1000.5 ; N parenrighttp ; B 50 -1763 661 48 ;
+C 50 ; WX 769.83 ; N bracketlefttp ; B 374 -1751 748 48 ;
+C 51 ; WX 769.83 ; N bracketrighttp ; B 21 -1751 395 48 ;
+C 52 ; WX 769.83 ; N bracketleftbt ; B 374 -1750 748 49 ;
+C 53 ; WX 769.83 ; N bracketrightbt ; B 21 -1750 395 49 ;
+C 54 ; WX 769.83 ; N bracketleftex ; B 374 -601 457 1 ;
+C 55 ; WX 769.83 ; N bracketrightex ; B 312 -601 395 1 ;
+C 56 ; WX 1015.89 ; N bracelefttp ; B 435 -912 812 -1 ;
+C 57 ; WX 1015.89 ; N bracerighttp ; B 203 -912 581 -1 ;
+C 58 ; WX 1015.89 ; N braceleftbt ; B 435 -899 812 12 ;
+C 59 ; WX 1015.89 ; N bracerightbt ; B 203 -899 581 12 ;
+C 60 ; WX 1015.89 ; N braceleftmid ; B 203 -1812 581 12 ;
+C 61 ; WX 1015.89 ; N bracerightmid ; B 435 -1812 812 12 ;
+C 62 ; WX 1015.89 ; N braceex ; B 435 -312 581 12 ;
+C 63 ; WX 769.83 ; N arrowvertex ; B 359 -601 410 1 ;
+C 64 ; WX 1000.5 ; N parenleftbt ; B 339 -1750 950 61 ;
+C 65 ; WX 1000.5 ; N parenrightbt ; B 50 -1750 661 61 ;
+C 66 ; WX 1000.5 ; N parenleftex ; B 339 -612 458 12 ;
+C 67 ; WX 1000.5 ; N parenrightex ; B 542 -612 661 12 ;
+C 68 ; WX 708.33 ; N angbracketleftBig ; B 140 -1751 596 49 ;
+C 69 ; WX 708.33 ; N angbracketrightBig ; B 111 -1751 567 49 ;
+C 70 ; WX 954.39 ; N unionsqtext ; B 78 -1000 875 0 ;
+C 71 ; WX 1261.89 ; N unionsqdisplay ; B 78 -1400 1183 0 ;
+C 72 ; WX 554.56 ; N contintegraltext ; B 78 -1111 691 0 ;
+C 73 ; WX 646.83 ; N contintegraldisplay ; B 78 -2222 1060 0 ;
+C 74 ; WX 1261.89 ; N circledottext ; B 79 -1000 1184 0 ;
+C 75 ; WX 1704.78 ; N circledotdisplay ; B 79 -1400 1627 0 ;
+C 76 ; WX 1261.89 ; N circleplustext ; B 79 -1000 1184 0 ;
+C 77 ; WX 1704.78 ; N circleplusdisplay ; B 79 -1400 1627 0 ;
+C 78 ; WX 1261.89 ; N circlemultiplytext ; B 78 -1000 1183 0 ;
+C 79 ; WX 1704.78 ; N circlemultiplydisplay ; B 78 -1400 1626 0 ;
+C 80 ; WX 1200.39 ; N summationtext ; B 78 -1000 1121 0 ;
+C 81 ; WX 1077.39 ; N producttext ; B 78 -1000 998 0 ;
+C 82 ; WX 554.56 ; N integraltext ; B 78 -1111 691 0 ;
+C 83 ; WX 954.39 ; N uniontext ; B 78 -1000 875 0 ;
+C 84 ; WX 954.39 ; N intersectiontext ; B 78 -1000 875 0 ;
+C 85 ; WX 954.39 ; N unionmultitext ; B 79 -1000 876 0 ;
+C 86 ; WX 954.39 ; N logicalandtext ; B 78 -1000 875 0 ;
+C 87 ; WX 954.39 ; N logicalortext ; B 78 -1000 875 0 ;
+C 88 ; WX 1631 ; N summationdisplay ; B 78 -1400 1552 0 ;
+C 89 ; WX 1446.44 ; N productdisplay ; B 78 -1400 1367 0 ;
+C 90 ; WX 646.83 ; N integraldisplay ; B 78 -2222 1060 0 ;
+C 91 ; WX 1261.89 ; N uniondisplay ; B 78 -1400 1183 0 ;
+C 92 ; WX 1261.89 ; N intersectiondisplay ; B 78 -1400 1183 0 ;
+C 93 ; WX 1261.89 ; N unionmultidisplay ; B 79 -1400 1184 0 ;
+C 94 ; WX 1261.89 ; N logicalanddisplay ; B 78 -1400 1183 0 ;
+C 95 ; WX 1261.89 ; N logicalordisplay ; B 78 -1400 1183 0 ;
+C 96 ; WX 1077.39 ; N coproducttext ; B 78 -1000 998 0 ;
+C 97 ; WX 1446.44 ; N coproductdisplay ; B 78 -1400 1367 0 ;
+C 98 ; WX 646.83 ; N hatwide ; B 8 552 638 742 ;
+C 99 ; WX 1138.89 ; N hatwider ; B 11 565 1127 770 ;
+C 100 ; WX 1631 ; N hatwidest ; B 12 564 1618 770 ;
+C 101 ; WX 646.83 ; N tildewide ; B 16 599 630 722 ;
+C 102 ; WX 1138.89 ; N tildewider ; B 16 614 1122 750 ;
+C 103 ; WX 1631 ; N tildewidest ; B 16 613 1614 750 ;
+C 104 ; WX 554.56 ; N bracketleftBig ; B 264 -1750 521 49 ;
+C 105 ; WX 554.56 ; N bracketrightBig ; B 33 -1750 290 49 ;
+C 106 ; WX 616.06 ; N floorleftBig ; B 264 -1750 582 49 ;
+C 107 ; WX 616.06 ; N floorrightBig ; B 33 -1750 351 49 ;
+C 108 ; WX 616.06 ; N ceilingleftBig ; B 264 -1750 582 49 ;
+C 109 ; WX 616.06 ; N ceilingrightBig ; B 33 -1750 351 49 ;
+C 110 ; WX 769.83 ; N braceleftBig ; B 146 -1750 623 49 ;
+C 111 ; WX 769.83 ; N bracerightBig ; B 146 -1750 623 49 ;
+C 112 ; WX 1123 ; N radicalbig ; B 138 -1151 1147 49 ;
+C 113 ; WX 1123 ; N radicalBig ; B 138 -1751 1147 49 ;
+C 114 ; WX 1123 ; N radicalbigg ; B 138 -2351 1147 49 ;
+C 115 ; WX 1123 ; N radicalBigg ; B 138 -2951 1147 49 ;
+C 116 ; WX 1184.56 ; N radicalbt ; B 139 -1800 839 25 ;
+C 117 ; WX 1184.56 ; N radicalvertex ; B 790 -625 839 25 ;
+C 118 ; WX 1184.56 ; N radicaltp ; B 790 -576 1209 49 ;
+C 119 ; WX 892.83 ; N arrowvertexdbl ; B 297 -601 595 1 ;
+C 120 ; WX 769.83 ; N arrowtp ; B 138 -600 631 0 ;
+C 121 ; WX 769.83 ; N arrowbt ; B 138 -600 631 0 ;
+C 122 ; WX 481.78 ; N bracehtipdownleft ; B -12 -232 478 146 ;
+C 123 ; WX 481.78 ; N bracehtipdownright ; B 4 -232 494 146 ;
+C 124 ; WX 481.78 ; N bracehtipupleft ; B -12 0 478 378 ;
+C 125 ; WX 481.78 ; N bracehtipupright ; B 4 0 494 378 ;
+C 126 ; WX 892.83 ; N arrowdbltp ; B 76 -600 816 0 ;
+C 127 ; WX 892.83 ; N arrowdblbt ; B 76 -600 816 0 ;
+C -1 ; WX 0 ; N space ; B 0 0 0 0 ;
+EndCharMetrics
+EndFontMetrics

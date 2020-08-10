@@ -1,0 +1,73 @@
+This directory contains all the BaKoMa Computer Modern and AMS fonts 
+in Macintosh downloadable PostScript type 1 format.  These files were 
+created by converting the *.pfb files to *.pfa files with the t1ascii 
+program available in tex-archive/fonts/utilities/t1utils.  Then the 
+*.pfa files were downloaded to a Mac and converted to Macintosh 
+downloadable PS files with the program reAdobe.  There is one archive 
+for each Computer Modern typeface (in various sizes).  For example, 
+all sizes of the Computer Modern Roman typeface are in cmr.sit.hqx.
+
+To use these fonts with a PostScript printer, simply drag them into 
+your System Folder.  The system will put them in the Fonts subfolder 
+of the System Folder under System 7.1, or the Extensions subfolder of 
+the System Folder under System 7.0.  You must have corresponding 
+screen fonts to preview your documents on the screen.  Computer Modern 
+screen fonts are available in Mac TrueType format in 
+tex-archive/fonts/cm/ps-type1/bakoma/mac/tt.  These fonts have been 
+organized similar to the PostScript fonts in this directory.  
+Alternatively, you can get the original Computer Modern screen fonts 
+in Mac TrueType format from tex-archive/fonts/cm/ps-type1/bakoma/mrf, 
+but these fonts are individual MacBinary files.
+
+ATM screen fonts are not currently available for the Computer Modern
+PostScript fonts.  If you own Fontographer, Font Monger, or the font
+utilities from Y&Y, these can be created from the AFM and PostScript
+files.  If you do create such bitmapped screen fonts, please upload
+them to CTAN so that others can have access to them.
+
+ATM or Mac TrueType screen fonts exists for the AMS fonts, so
+currently the AMS fonts can only be used for printing.  We included
+them in the hope that someone would create the corresponding screen
+fonts and upload them to CTAN.
+
+To use these fonts with OzTeX, see the 00readme.oztex file in
+tex-archive/fonts/cm/ps-type1/bakoma/mac/oztex.
+
+The BaKoMa fonts in PostScript and TrueType format were originally 
+created by Basil K. Malyshev <malyshev@dxcern.cern.ch>.  His original 
+license still applies, which is reprinted below.  Please read 
+BaKoMa-CM.fonts and BaKoMa-AMS.fonts in 
+tex-archive/fonts/cm/ps-type1/bakoma for more information.
+
+******************************************************************************
+                           Licensing agreement
+******************************************************************************
+
+The author of this fonts grants to any individual or non-commercial
+organization the right to use and to make an unlimited number of
+copies of full package or selected fonts when this is done WITHOUT
+CHARGE and has attached this file with license agreement.
+
+This fonts cannot be sold or distributed with any commercial product
+or used in any commercial organization without additional agreement
+with author.  If you want to charge a small fee via distribution these
+fonts or any derivations from this fonts, you should contact the
+author.
+
+This restriction is also true for only outlines from this fonts
+i.e. outlines exported into other font formats, for example TrueType
+or Type3.
+
+This restriction is not intended to apply to connect time charges, or
+flat rate connection/download fees for electronic bulletin board
+services.
+******************************************************************************
+
+
+John Salmento               regular address:
+Research Assistant          Lehigh University
+Room B-261, Imbt Building   Energy Research Center
+email: js0p@lehigh.edu      117 ATLSS Drive
+phone: (610) 758-6285       Bethlehem PA, 18015
+
+

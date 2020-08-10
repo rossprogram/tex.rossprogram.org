@@ -1,0 +1,69 @@
+StartFontMetrics 2.0
+FontName eusb5
+FullName eusb5
+FamilyName eusb5
+Weight Medium
+ItalicAngle 0.000000
+IsFixedPitch false
+UnderlinePosition -133
+UnderlineThickness 20
+Version 1.2/19-Jan-95
+FontBBox 0, -195, 1327, 741
+Notice Copyright \(C\) 1994, 1995, Basil K. Malyshev. All Rights Reserved.\nBaKoMa Fonts Collection, Level-C.
+EncodingScheme FontSpecific
+CapHeight 706
+XHeight 705
+Descender 0
+Ascender 0
+StartCharMetrics 42
+C 0 ; WX 1172.5 ; N minus ; B 162 237 1004 277 ;
+C 24 ; WX 911.11 ; N similar ; B 131 179 780 349 ;
+C 48 ; WX 0 ; N ghost ; B 0 0 0 0 ;
+C 58 ; WX 1080.78 ; N logicalnot ; B 136 206 903 412 ;
+C 60 ; WX 1264.22 ; N Rfractur ; B 135 -12 1159 709 ;
+C 61 ; WX 914.89 ; N Ifractur ; B 136 -9 776 703 ;
+C 64 ; WX 1195.94 ; N aleph ; B 202 1 982 693 ;
+C 65 ; WX 1208 ; N A ; B 115 -17 1074 705 ;
+C 66 ; WX 1183.5 ; N B ; B 145 0 999 722 ;
+C 67 ; WX 976.28 ; N C ; B 170 -15 830 713 ;
+C 68 ; WX 1267.33 ; N D ; B 143 0 1097 724 ;
+C 69 ; WX 983.5 ; N E ; B 171 -11 812 712 ;
+C 70 ; WX 1060.39 ; N F ; B 137 -13 1011 728 ;
+C 71 ; WX 978.67 ; N G ; B 161 -139 786 710 ;
+C 72 ; WX 1336.28 ; N H ; B 136 -13 1223 706 ;
+C 73 ; WX 843.5 ; N I ; B 134 -17 669 706 ;
+C 74 ; WX 853.17 ; N J ; B 137 -138 712 704 ;
+C 75 ; WX 1257.67 ; N K ; B 133 -9 1122 713 ;
+C 76 ; WX 1120.39 ; N L ; B 132 -12 952 714 ;
+C 77 ; WX 1461.11 ; N M ; B 133 -17 1327 713 ;
+C 78 ; WX 1195.28 ; N N ; B 131 -13 1111 715 ;
+C 79 ; WX 1110.39 ; N O ; B 153 -20 936 711 ;
+C 80 ; WX 1050.39 ; N P ; B 138 -13 906 716 ;
+C 81 ; WX 1071.78 ; N Q ; B 151 -42 922 709 ;
+C 82 ; WX 1129.72 ; N R ; B 135 -11 1054 719 ;
+C 83 ; WX 883.5 ; N S ; B 110 -18 728 718 ;
+C 84 ; WX 945.94 ; N T ; B 131 -11 941 703 ;
+C 85 ; WX 1110.06 ; N U ; B 113 -13 1002 712 ;
+C 86 ; WX 1055.56 ; N V ; B 133 -17 913 705 ;
+C 87 ; WX 1470.11 ; N W ; B 133 -8 1322 714 ;
+C 88 ; WX 1122.17 ; N X ; B 133 -11 976 716 ;
+C 89 ; WX 976.28 ; N Y ; B 98 -135 775 712 ;
+C 90 ; WX 1045.56 ; N Z ; B 167 -14 909 708 ;
+C 94 ; WX 1196.61 ; N logicaland ; B 117 -9 1083 718 ;
+C 95 ; WX 1196.61 ; N logicalor ; B 111 -12 1068 691 ;
+C 102 ; WX 615.56 ; N braceleft ; B 99 -178 476 734 ;
+C 103 ; WX 615.56 ; N braceright ; B 130 -178 513 738 ;
+C 106 ; WX 479.33 ; N bar ; B 213 -172 257 741 ;
+C 110 ; WX 847.61 ; N backslash ; B 152 -195 693 730 ;
+C 120 ; WX 864.56 ; N section ; B 174 -107 678 705 ;
+C -1 ; WX 333.33 ; N hardspace ; B 333 0 334 0 ;
+C -1 ; WX 333.33 ; N space ; B 333 0 334 0 ;
+EndCharMetrics
+StartKernData 
+StartKernPairs 3
+KPX A ghost 177.22
+KPX I ghost 70.89
+KPX J ghost 70.89
+EndKernPairs
+EndKernData
+EndFontMetrics

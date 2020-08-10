@@ -1,0 +1,37 @@
+Basil K. Malyshev converted the Computer Modern and AMS Metafont 
+source files to PostScript type 1 (PFB, AFM, and PFM) and Windows 
+TrueType formats.  He also made the CM fonts available in Macintosh 
+TrueType format.  The fonts in these subdirectories are still covered 
+by his original license, which is in 
+tex-archive/tex/fonts/cm/ps-type1/bakoma/BaKoMa-CM.fonts.
+
+Tom Scavo and I have converted the PFB files to downloadable
+PostScript files, so that they can be used on the Macintosh.  These PS
+files have been stuffed, binhexed, and stored in the macps
+subdirectory.  We also reorganized the Mac TrueType files into
+suitcases so that they would be more readily accessible.  These files
+are stuffed, binhexed, and ready for downloading in the tt
+subdirectory.  We also created two configuration files, "Add BaKoMa
+Fonts" and "BaKoMa.enc", so that the BaKoMa fonts could be easily used
+with OzTeX.  These files were put into oztexfiles.sit.hqx.  This file
+along with 00readme.oztex are in the oztex subdirectory.  Installation
+instructions and other comments are in the 00readme.oztex file, so we
+recommend you download that file first.
+
+Currently, Mac TrueType versions of the AMS fonts do not exist, so the
+corresponding PostScript files are of limited usefulness.  Also, ATM-
+screen fonts (bitmaps) do not exist for any of the BaKoMa PS fonts, so
+both the TrueType and the mac PostScript files are needed to view and
+print to PS printers with OzTeX.  See the comments in 00readme.oztex
+for more information.  If someone has Fontographer, Font Monger, or
+the font utilities by Y&Y, we would greatly appreciate it if you would
+create ATM-compatible screen fonts.
+
+
+John Salmento               regular address:
+Research Assistant          Lehigh University
+Room B-261, Imbt Building   Energy Research Center
+email: js0p@lehigh.edu      117 ATLSS Drive
+phone: (610) 758-6285       Bethlehem PA, 18015
+
+

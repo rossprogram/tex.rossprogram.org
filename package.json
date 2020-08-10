@@ -1,0 +1,41 @@
+{
+  "name": "tex.rossprogram.org",
+  "version": "1.0.0",
+  "description": "A real-time collaborative TeX editor",
+  "main": "src/index.js",
+  "bin": "server/index.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server"
+  },
+  "author": "Jim Fowler <kisonecat@gmail.com>",
+  "license": "AGPL-3.0",
+  "devDependencies": {
+    "css-loader": "^4.2.1",
+    "file-loader": "^6.0.0",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "worker-loader": "^3.0.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@teamwork/websocket-json-stream": "^2.0.0",
+    "@ximeraproject/kpathsea": "^1.0.2",
+    "ace-builds": "^1.4.12",
+    "dotenv": "^8.2.0",
+    "dvi2html": "^0.0.6",
+    "fetch-readablestream": "^0.2.0",
+    "pako": "^1.0.11",
+    "sharedb": "^1.4.1",
+    "sharedb-ace": "^1.0.9",
+    "sharedb-mongo": "^1.0.0-beta.14",
+    "snabbdom": "^1.0.1",
+    "split.js": "^1.6.2",
+    "uuid": "^8.3.0",
+    "web-streams-polyfill": "^3.0.0"
+  }
+}

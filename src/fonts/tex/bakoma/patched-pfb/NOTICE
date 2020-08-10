@@ -1,0 +1,72 @@
+Message-ID:  <Pine.HPP.3.95.961127112007.2046A-100000@hpslap03.cern.ch>
+Date:         Wed, 27 Nov 1996 11:49:50 +0100
+From: "J. Scott Berg" <Scott.Berg@CERN.CH>
+Subject:      CTAN Submission -- Fix for Bakoma fonts
+
+I have uploaded a file newbakoma.tar.gz to ftp.tex.ac.uk:/incoming.
+
+It contains the files
+
+cmbsy10.pfb   cmbsy8.pfb    cmsy5.pfb     cmsy8.pfb
+cmbsy6.pfb    cmbsy9.pfb    cmsy6.pfb     cmsy9.pfb
+cmbsy7.pfb    cmsy10.pfb    cmsy7.pfb
+
+which unpack into a directory newbakoma/.
+
+It's purpose is to provide a simple solution to a known
+problem--square roots when using the Bakoma fonts get chopped off at
+the knees.  I did nothing particularly original--I just followed the
+advice from the following news article (found using Deja News):
+
+> Subject:      Re: Square root with Bakoma fonts
+> From:         jhertzli@ix.netcom.com(Joseph Hertzlinger)
+> Date:         1996/05/12
+> Message-Id:   <4n3gj5$g55@dfw-ixnews6.ix.netcom.com>
+> Newsgroups:   comp.text.tex
+>
+> In <Dr74pJ.KA9@murdoch.acc.Virginia.EDU> lk3a@cars.mech.Virginia.EDU
+> (Count Dracula) writes:
+>
+> >The square root symbol in Bakoma fonts comes out chopped.
+> >Has anyone devised a workaround to this?
+>
+> The square roots in the symbol fonts (cmsy* and cmbsy*) in
+> /fonts/postscript/bakoma/pfb in some TeX archives has a bounding box
+> which is too small
+>
+> The square roots in the symbol fonts in /fonts/postscript/cm (at least
+> at SHSU and also the Walnut Creek CDROM) will not be chopped.
+>
+> Alternatively you can try editing the BBox array in each font using a
+> hex editor. (The second value should be about -999.)
+
+The unchopped fonts referred to seem to have fallen off the face of
+CTAN, so I figured I'd provide corrected ones.
+
+I took the -999 literally; somebody who actually knows what they're
+doing could probably make a tighter bounding box.  Note that you don't
+even need a hex editor to do this--I just edited the 'FontBBox'
+comment, which is in plaintext.  Maybe I should have changed something
+else, but this seemed to be sufficient to get things working.  Let me
+reiterate I have no clue what I'm doing--I just applied a simple fix
+which seems to work.  I'd welcome anyone who knows what's going on to
+provide a better solution.
+
+I would suggest replacing Basil's version of these fonts in
+fonts/cm/ps-type1/bakoma/pfb with the corrected files, and renaming
+his to <file>.orig.
+
+Note I've only fixed the pfb files; the other formats should probably
+be updated as well (?), but I lack the facilities and knowledge to do
+so.
+
+A big thanks to Basil for making these things in the first place, Deja
+News for preventing information from falling off the end of the net,
+and the CTAN folks for organizing all the TeX stuff...
+
+                                -Scott Berg
+
+--
+J. Scott Berg                      email: Scott.Berg@cern.ch
+Work Phone: (41-22-)767-94-67      Real mail: CERN; SL Division; Bldg 30-2002
+                                              CH-1211 Geneva 23; Switzerland

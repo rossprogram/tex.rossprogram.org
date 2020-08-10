@@ -1,0 +1,115 @@
+This directory contains all the BaKoMa Computer Modern fonts in
+Macintosh TrueType format.  These fonts are the same fonts in
+tex-archive/fonts/cm/ps-type1/bakoma/mrf, except for three minor
+differences.  The first is that the files in the mrf directory are in
+MacBinary format, while the fonts in this directory are stuffed,
+binhexed files, a more common format for archived Mac files.  The
+second is that each font in the mrf directory is an individual
+suitcase with the name *FontName#.mrf, where * is a space or empty
+character and # is a number (which does not correspond to the font
+size).  In this directory, however, all similarly named fonts were
+grouped in a suitcase named after that font.  For example, all sizes
+of the Computer Modern Roman fonts are in cmr.mrf.sit.hqx.  The third
+is that the screen font name for each font has been prefixed with a
+"~".  This pushes all the fonts to the bottom of the font menu, so
+that all your regular fonts remain more accessible at the top.  It is
+also possible to remove some or all the BaKoMa fonts from the font
+menu by replacing the "~" with a "%".  See the section on hidden fonts
+below for more details.  After de-binhexing and unstuffing, all the
+Computer Modern Roman fonts will be in the cmr.mrf suitcase.  (Trivial
+note: I believe mrf stands for Macintosh Resource Format.) The fonts
+in the mrf directory were created by Basil K. Malyshev using Font
+Monger.
+
+To use these fonts on a Macintosh, just drop them into your System 
+Folder under System 7.x, at which point the system will put them where 
+they belong.  They should appear in an applications's Font menu like 
+any other font and should print on either PostScript or non-PostScript 
+printers.
+
+ATM screen fonts are not currently available for the Computer Modern
+fonts.  If you own Fontographer, Font Monger, or the font utilities
+from Y&Y, you can create these bitmaps from the AFM and PostScript
+files.  If you do create these screen fonts, please upload them to
+CTAN so that others can have access to them.
+
+No ATM or Mac TrueType screen fonts exist for the AMS fonts, so
+currently the AMS fonts can only be used for printing.  If you have
+any of the programs listed above, you can create them yourself.  If
+you do, please upload them to CTAN.
+
+To use these fonts with OzTeX, see the 00readme.oztex file in
+tex-archive/fonts/cm/ps-type1/bakoma/mac/oztex.
+
+Hidden Fonts
+------------
+You can remove the BaKoMa fonts from the font menu and still use them
+with OzTeX.  However, if you do this no other application, (except
+possibly Textures), will be able to access these fonts.  There are two
+steps to do this.  It is probably best to work on a copy of the
+TrueType fonts when your using ResEdit.
+	1.  Change the "~" to a "%" in the screen font name in the 
+	    "Add BaKoMa fonts" file.  Do this for any of the fonts 
+	    you want to hide.  For example, the current line for cmr12
+	    in the "Add BaKoMa fonts" looks like
+=  	cmr12	cmr12  		<cmr12		~cmr12		BaKoMaCM.enc
+	    The new line should look like.
+=  	cmr12	cmr12  		<cmr12		%cmr12		BaKoMaCM.enc
+
+	2.  Change the "~" to a "%" in the font name in the TrueType
+	    screen font using ResEdit.
+            1.  Start ResEdit and open the suitcase containing the font 
+		you want. Let's say it's cmr12.
+	    2.	Double click on the FOND resource.
+	    3.	Select but do not open the resource named ~cmr12.
+	    4.	Get Info (ie. type command I).
+	    5.  Change the "~" in the name field to a "%".
+	    6.  Save and close the field.
+
+I determine this trick by examining the Hidden fonts that Blue Sky
+Research supplies with Textures (The best implementation of TeX on any
+platform!!!) They credit Constantin Kahn at the University of Hannover
+for suggesting this technique.  By the way, Blue Sky Research research
+also supplies Computer Modern fonts in Postscript type-1 format with
+ATM screen fonts.  There are two advantages to the Blue Sky fonts.
+The first is I have heard the print quality is slightly better than
+the BaKoMa fonts.  The second is you do not need both the truetype
+screen fonts and downloadable postscript files, so they take up less
+disk space.
+
+The BaKoMa fonts in PostScript and TrueType format were originally 
+created by Basil K. Malyshev <malyshev@dxcern.cern.ch>.  His original 
+license still applies, which is reprinted below.  Please read 
+BaKoMa-CM.fonts and BaKoMa-AMS.fonts in 
+tex-archive/fonts/cm/ps-type1/bakoma for more information.
+
+******************************************************************************
+                           Licensing agreement
+******************************************************************************
+
+The author of this fonts grants to any individual or non-commercial
+organization the right to use and to make an unlimited number of
+copies of full package or selected fonts when this is done WITHOUT
+CHARGE and has attached this file with license agreement.
+
+This fonts cannot be sold or distributed with any commercial product
+or used in any commercial organization without additional agreement
+with author.  If you want to charge a small fee via distribution these
+fonts or any derivations from this fonts, you should contact the
+author.
+
+This restriction is also true for only outlines from this fonts
+i.e. outlines exported into other font formats, for example TrueType
+or Type3.
+
+This restriction is not intended to apply to connect time charges, or
+flat rate connection/download fees for electronic bulletin board
+services.
+******************************************************************************
+
+
+John Salmento               regular address:
+Research Assistant          Lehigh University
+Room B-261, Imbt Building   Energy Research Center
+email: js0p@lehigh.edu      117 ATLSS Drive
+phone: (610) 758-6285       Bethlehem PA, 18015

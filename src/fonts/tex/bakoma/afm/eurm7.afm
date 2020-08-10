@@ -1,0 +1,196 @@
+StartFontMetrics 2.0
+FontName eurm7
+FullName eurm7
+FamilyName eurm7
+Weight Medium
+ItalicAngle 0.000000
+IsFixedPitch false
+UnderlinePosition -133
+UnderlineThickness 20
+Version 1.2/19-Jan-95
+FontBBox -6, -202, 1227, 722
+Notice Copyright \(C\) 1994, 1995, Basil K. Malyshev. All Rights Reserved.\nBaKoMa Fonts Collection, Level-C.
+EncodingScheme FontSpecific
+CapHeight 690
+XHeight 464
+Descender -199
+Ascender 685
+StartCharMetrics 113
+C 0 ; WX 545.33 ; N Gamma ; B 114 -7 606 697 ;
+C 1 ; WX 867 ; N Delta ; B 65 -4 808 696 ;
+C 2 ; WX 917 ; N Theta ; B 64 -12 850 701 ;
+C 3 ; WX 932 ; N Lambda ; B 62 -7 901 698 ;
+C 4 ; WX 734.56 ; N Xi ; B 61 -6 673 696 ;
+C 5 ; WX 877.67 ; N Pi ; B 60 -14 813 690 ;
+C 6 ; WX 791.61 ; N Sigma ; B 86 2 708 695 ;
+C 7 ; WX 870.33 ; N Upsilon ; B 53 -11 804 705 ;
+C 8 ; WX 1002.5 ; N Phi ; B 113 2 875 685 ;
+C 9 ; WX 855.72 ; N Psi ; B -1 -1 818 694 ;
+C 10 ; WX 1050.39 ; N Omega ; B 59 -2 983 689 ;
+C 11 ; WX 805 ; N alpha ; B 126 -20 791 468 ;
+C 12 ; WX 809.61 ; N beta ; B 158 -202 673 697 ;
+C 13 ; WX 748.61 ; N gamma ; B 2 -198 688 471 ;
+C 14 ; WX 627.11 ; N delta ; B 93 -10 525 694 ;
+C 15 ; WX 682.67 ; N epsilon1 ; B 130 -11 584 471 ;
+C 16 ; WX 639.67 ; N zeta ; B 125 -136 584 695 ;
+C 17 ; WX 694 ; N eta ; B -6 -199 571 466 ;
+C 18 ; WX 687.28 ; N theta ; B 97 -11 579 695 ;
+C 19 ; WX 439.44 ; N iota ; B 144 -9 404 474 ;
+C 20 ; WX 688.5 ; N kappa ; B 157 -4 614 472 ;
+C 21 ; WX 673.22 ; N lambda ; B 55 -11 606 689 ;
+C 22 ; WX 759 ; N mu ; B 138 -200 748 466 ;
+C 23 ; WX 738.22 ; N nu ; B -4 -8 664 470 ;
+C 24 ; WX 686 ; N xi ; B 114 -137 646 694 ;
+C 25 ; WX 749.22 ; N pi ; B 54 -5 740 487 ;
+C 26 ; WX 680.22 ; N rho ; B 137 -189 593 477 ;
+C 27 ; WX 744.94 ; N sigma ; B 123 -10 717 476 ;
+C 28 ; WX 641.78 ; N tau ; B 47 -9 616 485 ;
+C 29 ; WX 724.5 ; N upsilon ; B 17 -13 617 472 ;
+C 30 ; WX 883.17 ; N phi ; B 105 -192 775 694 ;
+C 31 ; WX 712.61 ; N chi ; B 18 -197 667 466 ;
+C 32 ; WX 913.39 ; N psi ; B 19 -189 803 695 ;
+C 33 ; WX 1022.67 ; N omega ; B 107 -13 911 472 ;
+C 34 ; WX 610.67 ; N epsilon ; B 123 -15 516 471 ;
+C 35 ; WX 684.83 ; N theta1 ; B 15 -14 621 698 ;
+C 36 ; WX 1050.72 ; N pi1 ; B 114 -12 922 535 ;
+C 39 ; WX 923.44 ; N phi1 ; B 133 -197 803 467 ;
+C 48 ; WX 625.61 ; N zero ; B 71 -14 548 700 ;
+C 49 ; WX 625.61 ; N one ; B 133 -5 384 712 ;
+C 50 ; WX 625.61 ; N two ; B 43 2 565 709 ;
+C 51 ; WX 625.61 ; N three ; B 50 -17 534 702 ;
+C 52 ; WX 625.61 ; N four ; B 29 -6 567 704 ;
+C 53 ; WX 625.61 ; N five ; B 44 -10 536 687 ;
+C 54 ; WX 625.61 ; N six ; B 81 -13 562 700 ;
+C 55 ; WX 625.61 ; N seven ; B 85 -8 588 687 ;
+C 56 ; WX 625.61 ; N eight ; B 75 -10 551 706 ;
+C 57 ; WX 625.61 ; N nine ; B 77 -9 552 702 ;
+C 58 ; WX 374.78 ; N period ; B 129 -15 257 102 ;
+C 59 ; WX 374.78 ; N comma ; B 143 -192 272 107 ;
+C 60 ; WX 915.5 ; N less ; B 82 -39 800 534 ;
+C 61 ; WX 628 ; N slash ; B 68 -182 556 722 ;
+C 62 ; WX 915.5 ; N greater ; B 114 -39 833 534 ;
+C 64 ; WX 694.28 ; N partialdiff ; B 121 -10 577 700 ;
+C 65 ; WX 931.72 ; N A ; B 58 -11 869 680 ;
+C 66 ; WX 801.72 ; N B ; B 87 -1 679 686 ;
+C 67 ; WX 868.56 ; N C ; B 129 -15 790 699 ;
+C 68 ; WX 997 ; N D ; B 88 1 864 686 ;
+C 69 ; WX 744.61 ; N E ; B 81 0 662 690 ;
+C 70 ; WX 625.28 ; N F ; B 74 -2 558 691 ;
+C 71 ; WX 925.89 ; N G ; B 132 -17 794 699 ;
+C 72 ; WX 946 ; N H ; B 88 -2 870 690 ;
+C 73 ; WX 506.61 ; N I ; B 118 -1 423 683 ;
+C 74 ; WX 515.44 ; N J ; B 112 -167 427 690 ;
+C 75 ; WX 816.67 ; N K ; B 85 -7 753 683 ;
+C 76 ; WX 692.72 ; N L ; B 86 -5 633 690 ;
+C 77 ; WX 1240.83 ; N M ; B 120 -6 1171 690 ;
+C 78 ; WX 998.56 ; N N ; B 85 -5 832 694 ;
+C 79 ; WX 968.61 ; N O ; B 111 -18 848 700 ;
+C 80 ; WX 712 ; N P ; B 93 -6 652 679 ;
+C 81 ; WX 997.61 ; N Q ; B 126 -197 865 698 ;
+C 82 ; WX 749.22 ; N R ; B 92 -7 687 679 ;
+C 83 ; WX 690.61 ; N S ; B 82 -15 576 702 ;
+C 84 ; WX 618 ; N T ; B 61 -10 680 697 ;
+C 85 ; WX 936 ; N U ; B 69 -9 876 694 ;
+C 86 ; WX 791.22 ; N V ; B 57 -16 854 698 ;
+C 87 ; WX 1175.67 ; N W ; B 45 -11 1227 690 ;
+C 88 ; WX 813.61 ; N X ; B 61 -11 749 688 ;
+C 89 ; WX 688.33 ; N Y ; B 57 -11 726 693 ;
+C 90 ; WX 814.22 ; N Z ; B 82 -12 753 695 ;
+C 96 ; WX 499.89 ; N lscript ; B 65 -9 432 704 ;
+C 97 ; WX 749.22 ; N a ; B 130 -12 704 466 ;
+C 98 ; WX 726 ; N b ; B 60 -10 621 684 ;
+C 99 ; WX 611.28 ; N c ; B 89 -17 534 480 ;
+C 100 ; WX 743.39 ; N d ; B 128 -19 705 685 ;
+C 101 ; WX 625.61 ; N e ; B 111 -9 554 483 ;
+C 102 ; WX 535.56 ; N f ; B 68 -10 487 705 ;
+C 103 ; WX 703.72 ; N g ; B 127 -202 578 473 ;
+C 104 ; WX 763.56 ; N h ; B 61 -10 760 682 ;
+C 105 ; WX 467.83 ; N i ; B 40 -9 438 683 ;
+C 106 ; WX 436.11 ; N j ; B 46 -191 286 683 ;
+C 107 ; WX 689.11 ; N k ; B 60 -7 668 687 ;
+C 108 ; WX 473.94 ; N l ; B 76 -11 436 687 ;
+C 109 ; WX 1095.89 ; N m ; B 64 -18 1071 470 ;
+C 110 ; WX 811.78 ; N n ; B 36 -11 773 471 ;
+C 111 ; WX 697.61 ; N o ; B 94 -13 593 467 ;
+C 112 ; WX 727.22 ; N p ; B 17 -199 606 470 ;
+C 113 ; WX 745.22 ; N q ; B 131 -194 597 504 ;
+C 114 ; WX 549.33 ; N r ; B 40 -5 500 473 ;
+C 115 ; WX 576.17 ; N s ; B 89 -17 467 466 ;
+C 116 ; WX 531.94 ; N t ; B 48 -9 481 611 ;
+C 117 ; WX 787 ; N u ; B 29 -13 770 470 ;
+C 118 ; WX 621 ; N v ; B 7 -11 558 469 ;
+C 119 ; WX 978.72 ; N w ; B 16 -9 913 470 ;
+C 120 ; WX 655.5 ; N x ; B 33 -13 609 464 ;
+C 121 ; WX 732.11 ; N y ; B 11 -192 584 469 ;
+C 122 ; WX 593 ; N z ; B 57 -11 571 462 ;
+C 123 ; WX 437.33 ; N dotlessi ; B 18 -11 421 468 ;
+C 124 ; WX 436.11 ; N dotlessj ; B 46 -191 282 468 ;
+C 125 ; WX 744 ; N weierstrass ; B 99 -197 669 471 ;
+C 127 ; WX 0 ; N ghost ; B 0 0 0 0 ;
+C -1 ; WX 333.33 ; N hardspace ; B 333 0 334 0 ;
+C -1 ; WX 333.33 ; N space ; B 333 0 334 0 ;
+EndCharMetrics
+StartKernData 
+StartKernPairs 59
+KPX C ghost 62.73
+KPX Delta ghost 31.37
+KPX F comma -94.1
+KPX F period -94.1
+KPX F slash -62.73
+KPX G ghost 31.37
+KPX Gamma comma -94.1
+KPX Gamma period -94.1
+KPX Gamma slash -62.73
+KPX Lambda ghost 31.37
+KPX O ghost 31.37
+KPX P comma -94.1
+KPX P period -94.1
+KPX Pi ghost 31.37
+KPX Psi ghost 31.37
+KPX S ghost 31.37
+KPX T comma -94.1
+KPX T period -94.1
+KPX T slash -62.73
+KPX Theta ghost 31.37
+KPX Upsilon ghost 31.37
+KPX V comma -94.1
+KPX V ghost 62.73
+KPX V period -94.1
+KPX V slash -62.73
+KPX W comma -94.1
+KPX W ghost 62.73
+KPX W period -94.1
+KPX W slash -62.73
+KPX X ghost 62.73
+KPX Y comma -94.1
+KPX Y ghost 62.73
+KPX Y period -94.1
+KPX Y slash -62.73
+KPX Z ghost 62.73
+KPX a ghost 31.37
+KPX c ghost 31.37
+KPX e ghost 31.37
+KPX f ghost 125.46
+KPX g ghost 31.37
+KPX lambda ghost -62.73
+KPX o ghost 31.37
+KPX omega ghost 31.37
+KPX phi1 ghost 31.37
+KPX pi ghost 62.73
+KPX psi ghost 31.37
+KPX rho ghost 31.37
+KPX s ghost 31.37
+KPX slash A -62.73
+KPX slash Delta -62.73
+KPX slash Lambda -62.73
+KPX slash a -62.73
+KPX slash alpha -62.73
+KPX slash g -62.73
+KPX tau ghost 62.73
+KPX theta ghost 31.37
+KPX weierstrass ghost 62.73
+KPX z ghost 31.37
+KPX zeta ghost 62.73
+EndKernPairs
+EndKernData
+EndFontMetrics

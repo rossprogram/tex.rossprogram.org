@@ -1,0 +1,69 @@
+StartFontMetrics 2.0
+FontName eusm6
+FullName eusm6
+FamilyName eusm6
+Weight Medium
+ItalicAngle 0.000000
+IsFixedPitch false
+UnderlinePosition -133
+UnderlineThickness 20
+Version 1.2/19-Jan-95
+FontBBox 0, -193, 1161, 736
+Notice Copyright \(C\) 1994, 1995, Basil K. Malyshev. All Rights Reserved.\nBaKoMa Fonts Collection, Level-C.
+EncodingScheme FontSpecific
+CapHeight 694
+XHeight 699
+Descender 0
+Ascender 0
+StartCharMetrics 42
+C 0 ; WX 969.72 ; N minus ; B 99 236 864 274 ;
+C 24 ; WX 732.61 ; N similar ; B 71 177 660 346 ;
+C 48 ; WX 0 ; N ghost ; B 0 0 0 0 ;
+C 58 ; WX 886.5 ; N logicalnot ; B 75 205 773 408 ;
+C 60 ; WX 1052.89 ; N Rfractur ; B 78 -11 1002 701 ;
+C 61 ; WX 736 ; N Ifractur ; B 82 -11 664 701 ;
+C 64 ; WX 991 ; N aleph ; B 137 1 844 688 ;
+C 65 ; WX 986.28 ; N A ; B 37 -15 901 685 ;
+C 66 ; WX 975.33 ; N B ; B 95 -3 796 713 ;
+C 67 ; WX 791.72 ; N C ; B 127 -15 696 699 ;
+C 68 ; WX 1055.72 ; N D ; B 102 4 932 717 ;
+C 69 ; WX 798.28 ; N E ; B 127 -12 661 673 ;
+C 70 ; WX 845.83 ; N F ; B 90 -15 864 701 ;
+C 71 ; WX 793.89 ; N G ; B 131 -132 653 697 ;
+C 72 ; WX 1118.28 ; N H ; B 85 -13 1063 694 ;
+C 73 ; WX 592.78 ; N I ; B 78 -14 512 689 ;
+C 74 ; WX 680 ; N J ; B 79 -129 589 696 ;
+C 75 ; WX 1047 ; N K ; B 80 -12 969 697 ;
+C 76 ; WX 922.44 ; N L ; B 83 -7 783 696 ;
+C 77 ; WX 1231.5 ; N M ; B 77 -26 1159 698 ;
+C 78 ; WX 990.33 ; N N ; B 79 -14 975 704 ;
+C 79 ; WX 913.39 ; N O ; B 128 -21 777 684 ;
+C 80 ; WX 859 ; N P ; B 96 -11 785 717 ;
+C 81 ; WX 861.17 ; N Q ; B 130 -26 760 701 ;
+C 82 ; WX 930.89 ; N R ; B 82 -8 870 719 ;
+C 83 ; WX 721.67 ; N S ; B 100 -17 603 706 ;
+C 84 ; WX 773.56 ; N T ; B 77 -11 817 694 ;
+C 85 ; WX 920.89 ; N U ; B 76 -16 845 697 ;
+C 86 ; WX 863.67 ; N V ; B 77 -14 785 707 ;
+C 87 ; WX 1239.67 ; N W ; B 76 -9 1161 707 ;
+C 88 ; WX 924 ; N X ; B 103 -12 849 710 ;
+C 89 ; WX 783.89 ; N Y ; B 75 -138 625 701 ;
+C 90 ; WX 854.61 ; N Z ; B 114 -16 778 699 ;
+C 94 ; WX 991.61 ; N logicaland ; B 59 -9 935 712 ;
+C 95 ; WX 991.61 ; N logicalor ; B 53 -12 921 686 ;
+C 102 ; WX 464.5 ; N braceleft ; B 42 -177 384 728 ;
+C 103 ; WX 464.5 ; N braceright ; B 70 -177 418 732 ;
+C 106 ; WX 341 ; N bar ; B 146 -171 186 736 ;
+C 110 ; WX 675 ; N backslash ; B 90 -193 581 724 ;
+C 120 ; WX 690.39 ; N section ; B 111 -107 568 699 ;
+C -1 ; WX 333.33 ; N hardspace ; B 333 0 334 0 ;
+C -1 ; WX 333.33 ; N space ; B 333 0 334 0 ;
+EndCharMetrics
+StartKernData 
+StartKernPairs 3
+KPX A ghost 160.75
+KPX I ghost 64.3
+KPX J ghost 64.3
+EndKernPairs
+EndKernData
+EndFontMetrics

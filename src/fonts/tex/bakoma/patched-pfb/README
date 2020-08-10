@@ -1,0 +1,10 @@
+This directory contains a set of (unofficial) patches to the BaKoMa
+symbol fonts, which provide a simple solution to a known problem --
+square roots when using the Bakoma fonts get chopped off at the knees.
+
+Their author is J. Scott Berg, and a copy of his announcement of the
+files is contained in file NOTICE in this directory.
+
+Robin Fairbairns
+
+For the CTAN team

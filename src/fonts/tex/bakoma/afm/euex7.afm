@@ -1,0 +1,72 @@
+StartFontMetrics 2.0
+FontName euex7
+FullName euex7
+FamilyName euex7
+Weight Medium
+ItalicAngle 0.000000
+IsFixedPitch false
+UnderlinePosition -133
+UnderlineThickness 20
+Version 1.2/19-Jan-95
+FontBBox -20, -2950, 1514, 772
+Notice Copyright \(C\) 1994, 1995, Basil K. Malyshev. All Rights Reserved.\nBaKoMa Fonts Collection, Level-C.
+EncodingScheme FontSpecific
+CapHeight 683
+XHeight 431
+Descender -194
+Ascender 694
+StartCharMetrics 52
+C 8 ; WX 661.72 ; N braceleftbig ; B 126 -1150 535 49 ;
+C 9 ; WX 661.72 ; N bracerightbig ; B 126 -1150 535 49 ;
+C 10 ; WX 754 ; N braceleftBig ; B 138 -1750 615 49 ;
+C 11 ; WX 754 ; N bracerightBig ; B 138 -1750 615 49 ;
+C 12 ; WX 846.22 ; N braceleftbigg ; B 152 -2350 693 49 ;
+C 13 ; WX 846.22 ; N bracerightbigg ; B 152 -2350 693 49 ;
+C 14 ; WX 907.72 ; N braceleftBigg ; B 165 -2950 742 49 ;
+C 15 ; WX 907.72 ; N bracerightBigg ; B 165 -2950 742 49 ;
+C 24 ; WX 1123 ; N arrowlefttophalf ; B 70 225 1052 499 ;
+C 25 ; WX 1123 ; N arrowleftbothalf ; B 70 0 1052 274 ;
+C 26 ; WX 1123 ; N arrowrighttophalf ; B 70 225 1052 499 ;
+C 27 ; WX 1123 ; N arrowrightbothalf ; B 70 0 1052 274 ;
+C 32 ; WX 1123 ; N arrowleft ; B 70 0 1052 499 ;
+C 33 ; WX 1123 ; N arrowright ; B 70 0 1052 499 ;
+C 34 ; WX 569.44 ; N arrowup ; B 38 -194 531 694 ;
+C 35 ; WX 569.44 ; N arrowdown ; B 38 -194 531 694 ;
+C 36 ; WX 1123 ; N arrowboth ; B 70 0 1052 499 ;
+C 37 ; WX 1123 ; N arrownortheast ; B 70 -194 1100 772 ;
+C 38 ; WX 1123 ; N arrowsoutheast ; B 70 -272 1100 694 ;
+C 40 ; WX 1123 ; N arrowdblleft ; B 70 -110 1052 609 ;
+C 41 ; WX 1123 ; N arrowdblright ; B 70 -110 1052 609 ;
+C 42 ; WX 754 ; N arrowdblup ; B 21 -194 733 694 ;
+C 43 ; WX 754 ; N arrowdbldown ; B 21 -194 733 694 ;
+C 44 ; WX 1123 ; N arrowdblboth ; B 50 -110 1072 609 ;
+C 45 ; WX 1123 ; N arrownorthwest ; B 22 -194 1052 772 ;
+C 46 ; WX 1123 ; N arrowsouthwest ; B 22 -272 1052 694 ;
+C 49 ; WX 1123 ; N infinity ; B 70 -10 1052 441 ;
+C 56 ; WX 1000 ; N bracelefttp ; B 446 -912 804 -1 ;
+C 57 ; WX 1000 ; N bracerighttp ; B 195 -912 553 -1 ;
+C 58 ; WX 1000 ; N braceleftbt ; B 446 -899 804 12 ;
+C 59 ; WX 1000 ; N bracerightbt ; B 195 -899 553 12 ;
+C 60 ; WX 1000 ; N braceleftmid ; B 195 -1812 553 12 ;
+C 61 ; WX 1000 ; N bracerightmid ; B 446 -1812 804 12 ;
+C 62 ; WX 1000 ; N braceex ; B 446 -312 553 12 ;
+C 72 ; WX 600.22 ; N contintegraltext ; B 61 -1111 569 0 ;
+C 73 ; WX 507.94 ; N contintegraldisplay ; B 23 -2222 625 0 ;
+C 80 ; WX 1184.56 ; N summationtext ; B 70 -1000 1083 0 ;
+C 81 ; WX 1184.56 ; N producttext ; B 85 -1000 1099 0 ;
+C 82 ; WX 600.22 ; N integraltext ; B 61 -1111 568 0 ;
+C 88 ; WX 1615.06 ; N summationdisplay ; B 70 -1400 1514 0 ;
+C 89 ; WX 1578.17 ; N productdisplay ; B 70 -1400 1507 0 ;
+C 90 ; WX 507.94 ; N integraldisplay ; B 50 -2222 580 0 ;
+C 96 ; WX 1184.56 ; N coproducttext ; B 85 -1000 1099 0 ;
+C 97 ; WX 1578.17 ; N coproductdisplay ; B 70 -1400 1507 0 ;
+C 108 ; WX 569.44 ; N arrowbothv ; B 38 -270 531 770 ;
+C 109 ; WX 754 ; N arrowdblbothv ; B 21 -270 733 770 ;
+C 122 ; WX 465.89 ; N bracehtipdownleft ; B -20 -251 470 107 ;
+C 123 ; WX 465.89 ; N bracehtipdownright ; B -4 -251 486 107 ;
+C 124 ; WX 465.89 ; N bracehtipupleft ; B -20 0 470 358 ;
+C 125 ; WX 465.89 ; N bracehtipupright ; B -4 0 486 358 ;
+C -1 ; WX 0 ; N hardspace ; B 0 0 0 0 ;
+C -1 ; WX 0 ; N space ; B 0 0 0 0 ;
+EndCharMetrics
+EndFontMetrics

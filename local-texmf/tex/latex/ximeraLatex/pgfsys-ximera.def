@@ -1,0 +1,62 @@
+%%
+%% This is file `pgfsys-ximera.def',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% ximera.dtx  (with options: `pgfsys')
+%% src/pgfsys.dtx  (with options: `pgfsys')
+%% ------------:| ------------------------------------------------------------
+%%       ximera:| Simultaneously writing print and online interactive materials
+%%       Author:| Jim Fowler and Oscar Levin and Jason Nowell and Hans Parshall and Bart Snapp
+%%       E-mail:| bart.snapp@gmail.com
+%%      License:| Released under the LaTeX Project Public License v1.3c or later
+%%          See:| http://www.latex-project.org/lppl.txt
+%% 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ProvidesFileRCS{pgfsys-ximera.def}
+
+\input pgfsys-dvisvgm.def
+
+\def\pgfsys@beginpicture{%
+  \special{color push gray 0}% make dvisvgm *not* add anything to text
+  \pgf@sys@svg@inpicturetrue% in a picture
+  \pgfsys@svg@boxmodefalse%
+  \special{dvisvgm:beginpicture}
+  \pgfsys@invoke{<g \ifx\pgf@sys@svg@last@stroke\relax\else
+    stroke="\pgf@sys@svg@last@stroke" \fi stroke-miterlimit="10" transform="scale(1,-1)">}}
+
+\def\pgfsys@endpicture{\pgfsys@invoke{</g>}\special{dvisvgm:endpicture}\special{color pop}}
+
+%% 
+%% Copyright (C) 2018-2020 by Bart Snapp <bart.snapp@gmail.com> and Jim Fowler <kisonecat@gmail.com>
+%% 
+%% This work may be distributed and/or modified under the conditions of
+%% the LaTeX Project Public License (LPPL), either version 1.3c of this
+%% license or (at your option) any later version.  The latest version of
+%% this license is in the file:
+%% 
+%% http://www.latex-project.org/lppl.txt
+%% 
+%% This work is "maintained" (as per LPPL maintenance status) by
+%% Bart Snapp. The source code can be found at:
+%% 
+%% https://github.com/XimeraProject/ximeraLatex
+%% 
+%% This work consists of the file ximera.dtx, the associated files
+%% under src/, and a Makefile.
+%% 
+%% Running "make" generates the derived files README, ximera.pdf, ximera.cls, xourse.cls.
+%% 
+%% Running "make inst" installs the files in the user's TeX tree.
+%% 
+%% Running "make install" installs the files in the local TeX tree.
+%% 
+%%
+%% End of file `pgfsys-ximera.def'.

@@ -1,0 +1,156 @@
+This file describes the instructions for using the BaKoMa Computer
+Modern fonts with OzTeX.  (The BaKoMa AMS fonts lack screen fonts so
+they can not be used for screen previewing in OzTeX.)  This directory
+contains alaso oztexfiles.sit.hqx which contains two files, "Add BaKoMa
+Fonts" and BaKoMaCM.enc, needed by OzTeX.
+
+Installation Instructions
+-------------------------
+1.  Download oztexfiles.sit.hqx.  De-binhex and unstuff.  Place "Add
+    BaKoMa Fonts" into your :OzTeX:Configs folder.  Edit the line beginning
+    with "PS folder(s)" and change the last entry to the folder where you
+    put the fonts in step 4.
+   
+2.  Place BaKoMaCM.enc file into your :OzTeX:PS-files:Encodings folder. 
+
+3.  Download the any or all the fonts in tex-archive/fonts/cm/ps-type1/
+    bakoma/mac/tt.  De-binhex and unstuff and drop on the System
+    folder.  With System 7.1 they will go to the Fonts subfolder.  With
+    System 7.0, they will go into the System suitcase.
+
+4.  If you want to print to a postscript printer using the BaKoMa
+    fonts with OzTeX, then download the corresponding fonts in 
+    tex-archive/fonts/cm/ps-type1/bakoma/mac/macps.  De-binhex and 
+    unstuff.  Drop them on the System folder.  With system 7.1 they
+    will go to the Fonts subfolder.  With system 7.0 they will go to
+    the Extension subfolder.
+
+5.  You can also download the AMS fonts in tex-archive/fonts/cm/ps-type1/
+    bakoma/mac/macps but the screen fonts are not available so they 
+    can not be used by OzTeX for screen previewing.  Since OzTeX does
+    not come with the AMS TFM files, you need to get them.  The
+    originals are available in tex-archive/fonts/ams/amsfonts/tfm.  Or
+    get the TFM files distributed with the BaKoMa fonts in 
+    tex-archive/cm/ps-type1/bakoma/tfm.
+
+6.  [Optional]  Throw away any corresponding PK-files to save disk
+    space, but see the comment below about printing before you do it.
+    Also read the OzTeX documentation about postscript fonts.
+
+Usage Instructions
+------------------
+1.  Before the BaKoMa fonts are accessible to OzTeX, the "Add BaKoMa fonts" 
+    file has to be loaded.  So either use the "Load Config" command 
+    under the Config menu or modify the Default config file.  See
+    the OzTeX user's manual for more information about the Config
+    files and using postscript fonts.
+
+2.  Tex and view the documents as usual.  The quality of the Computer
+    Modern fonts displayed on the screen should be much, much better.
+
+Encoding File
+-------------
+The BaKoMaCM.enc file is a SimpleText document because if the ~cmr12
+font is correctly installed in the System Fonts folder, the actual TeX
+characters like \Gamma are displayed in the comment field of each
+character that is re-encoded.  Also the last column of this document
+shows the key combination needed to produce each character.  I found
+the information I needed to create this encoding file by latexing the
+file fonttab.tex (available on CTAN), before I installed the BaKoMa
+fonts.  This file creates a table showing all the characters and the
+corresponding hexadecimal codes.  These codes correspond to the codes
+in the TFM files.  I found the hexadecimal codes in the screen fonts,
+by installing them in the system font folder and using Varityper
+Toolkit to create a table of all the characters and their
+corresponding hexadecimal codes.  It also displays the key sequences
+needed to type the characters.  FontClerk has a similar feature.  I
+created an entry for each code that was different.  See the OzTeX
+documentation for more information.
+
+Printing and Previewing
+-----------------------
+
+I have heard that documents printed using the BaKoMa fonts to a
+postscript printer will take much longer to print because the
+postscript information is much bigger than the PK bitmap
+information. In fact some documents may not print because of memory
+limitation in the printer.  Also people have said that the quality is
+very close but not quite as good as the PK fonts.  Having said this if
+you want to use BaKoMa fonts for postscript printing and previewing
+than you can throw away all the corresponding PK-files.  If you want
+to only use the BaKoMa fonts for previewing, remove the entries in the
+Download column in the "Add BaKoMa Fonts" file.  The entries in the
+Download column are prefixed with a "<".  Do not do step 4 above.  If
+you want to save disk space then delete the corresponding PK-files
+that are only used for previewing.  To preview the document with the
+BaKoMa fonts, load the "Add BaKoMa Fonts" file.  When you want to
+print reload the Default config file (assuming it hasn't been
+modified) to remove the BaKoMa fonts and print as usual.  You do not
+need to re-tex the document.
+
+TFM files
+---------
+Basil K. Malyshev also distributed TFM files with the BaKoMa fonts.
+These fonts are identical to the Computer Modern TFM files distributed
+with OzTeX except for two minor differences. 
+  1.  All the BaKoMa TFM files do not an optional flag which, if
+      present and TRUE, indicates that all the character codes are < 128.
+      I'm not aware of any software that uses the flag.  
+  2.  The BaKoMa CM fonts listed below have the Kappa Variant at
+      position 128, which causes the Checksum value to be different.
+      cmmi10.pl,cmmi12.pl,cmmi5.pl,cmmi6.pl,cmmi7.pl,cmmi8.pl,cmmi9.pl,
+      cmmib10.pl,cmmib6.pl,cmmib7.pl,cmmib8.pl,cmmib9.pl
+  
+I don't know why Basil has added this extra character; perhaps it is
+useful in some European languages.  But it doesn't really matter as
+far as OzTeX is concerned, nor for portability (as long as you avoid
+using the extra character!)
+
+For all practical purposes the two sets of TFMs are identical,
+so you can safely use the OzTeX TFMs with the BaKoMa fonts.
+You could also use the BaKoMa TFMs with OzTeX's PK fonts, but with
+one minor annoyance: if you use any of those cmmi* TFMs then dvips will
+generate checksum mismatch warnings when it compares the checksum in
+OzTeX's PK files.  Just ignore the warnings.
+(OzTeX doesn't bother checking for checksum differences.)
+
+Why both the TrueType and Postscript fonts are needed for printing.
+-------------------------------------------------------------------
+With most mac programs if you have a Truetype font install you can
+print files using this font to any postscript printer and you do not
+need the mac postscript files.  However, OzTeX does not know how to
+download the TrueType outline information in the MacTrueType files, so
+the mac postscript files are needed for printing to postscript
+printers.  This essentially doubles the disk space that is being taken
+up by these fonts.  (I'm not dumping on OzTeX.  I think it is a great
+program and Andrew Trevorrow did a great service releasing OzTeX as
+shareware.)  People with ATM still need both formats because ATM can
+not utilize the mac postscript file without an ATM screen font.
+Technically, this means a font file with a FOND resource that points
+to the mac postscript file.  Currently, no shareware or public domain
+program exists for creating an ATM screen font.  And Tom Scavo and
+I do not own any commercial font manipulation utilities to do the
+conversion.  Any volunteers?
+
+Hidden Fonts or Why the ~ at the beginning of each font name?
+-------------------------------------------------------------
+One problem with using all the fonts is that the font menu becomes
+very, very long which makes it difficult to access the typical
+macintosh fonts.  There are a couple of ways to deal with the
+problem.  1.  Create font families, but we don't know how.  2. Put a
+"%" in front of the font name so that they do not appear in the font
+menu.  However, other applications can't access them.  3.  Put a "~"
+in front of the font name so that they appear after they typical
+macintosh fonts.  
+
+Step 3 seem to be the best choice for distribution.  It provides the
+most flexibility and reduces the problem of the long font menu.
+Instructions for creating hidden fonts are in 00readme.tt in the
+tex-archive/fonts/cm/ps-type1/bakoma/mac/tt directory.
+
+John Salmento				regular address:
+Research Assistant			Lehigh University
+Room B-261, Imbt Building		Energy Research Center
+email: js0p@lehigh.edu			117 ATLSS Drive
+phone: (610) 758-6285			Bethlehem PA, 18015
+fax:   (610) 758-5959

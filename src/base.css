@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    overflow: hidden; 
+}
+
+.terminal {
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.terminal pre {
+    padding: 6pt;
+    min-height: 100%;
+    margin: 0;
+}
+
+.gutter {
+    background-color: #eee;
+
+    background-repeat: no-repeat;
+    background-position: 50%;
+
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: 0.1s;
+}
+
+.gutter:hover {
+    box-shadow: 0px 0px 17px 7px rgba(0, 0, 0, 0.3);
+    transition: 0.2s;
+}
+
+.gutter.gutter-horizontal {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg==');    
+    cursor: col-resize;
+}
+
+.gutter.gutter-vertical {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAFAQMAAABo7865AAAABlBMVEVHcEzMzMzyAv2sAAAAAXRSTlMAQObYZgAAABBJREFUeF5jOAMEEAIEEFwAn3kMwcB6I2AAAAAASUVORK5CYII=');
+    cursor: row-resize;
+}
+
+.gutter.gutter-horizontal {
+    height: 100vh;
+}
+button{
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 100%;
+    text-align: center;
+  padding: 7px 20px !important;
+  width: 40pt;
+  height: 40pt;
+  border-radius: 5px;
+  margin: 6pt;
+  margin-top: 20pt;
+  overflow: hidden;
+  display: inline-block;
+  float: left;
+  color: #eee;
+  background-color: rgba(0,0,0,0.2);
+  border: none;
+  border-radius: 5px;
+  transition: 0.8s;
+}
+
+.compile {
+    margin-right: 20pt;
+}
+
+button:hover{
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+  cursor: pointer;
+ 
+}
+button:hover a{
+ color: #1ec279;
+}
+
+.toolbar {
+    position: absolute;
+    overflow: hidden;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+
+
+.desktop {
+    overflow: scroll;
+}
+
+.tex {
+    background-color: #666;
+    white-space: nowrap;
+    display: flex;  
+    flex-wrap: wrap;
+    min-width: 9.5in;
+    flex-grow: 1;
+    flex-basis:0;
+}
+
+.tex > div {
+    flex: 0 0 6.5in;
+    min-width: 0;
+    display: inline-block;
+
+    height: 9in !important;
+    width: 6.5in !important;
+    margin: 0.5in;
+    margin-bottom: 0.25in;
+    margin-top: 0.25in;
+    border: solid white 1in;
+    background-color: white;
+    box-shadow: 0px 0px 15px 5px #222;
+}

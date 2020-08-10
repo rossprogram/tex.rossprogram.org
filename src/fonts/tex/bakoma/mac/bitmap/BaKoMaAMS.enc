@@ -1,0 +1,36 @@
+% Encoding for use with the BaKoMa APS Postscript fonts
+%
+$00  $A1
+$01  $A2
+$02  $A3
+$03  $A4
+$04  $A5
+$05  $A6
+$06  $A7
+$07  $A8
+$08  $A9
+$09  $AA
+$0A  $AD
+$0B  $AE
+$0C  $AF
+$0D  $B0
+$0E  $B1
+$0F  $B2
+$10  $B3
+$11  $B4
+$12  $B5
+$13  $B6
+$14  $B7
+$15  $B8
+$16  $B9
+$17  $BA
+$18  $BB
+$19  $BC
+$1A  $BD
+$1B  $BE
+$1C  $BF
+$1D  $C0
+$1E  $C1
+$1F  $C2
+$20  $C3
+$7F  $C4  

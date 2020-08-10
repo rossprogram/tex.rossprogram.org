@@ -1,0 +1,161 @@
+% Add BaKoMa AMS fonts to the current list of PostScript fonts used by OzTeX.
+% The BaKoMa fonts were created by Basil Malyshev; they are FREE PostScript
+% and TrueType versions of the Computer Modern fonts.  The fonts are not
+% distributed with OzTeX but can be obtained by ftp from any CTAN site.
+% Get /tex-archive/fonts/cm/ps-type1/bakoma/mac/00readme.mac and read it.
+% The PostScript fonts are in /tex-archive/fonts/cm/ps-type1/bakoma/mac/macps.
+% The TrueType fonts are in /tex-archive/fonts/cm/ps-type1/bakoma/mac/tt.
+% (Thanks to John Salmento for help creating this file.)
+%
+config files        = ?
+format files        = ?
+help files          = ?
+printer res & mode  = ?
+viewing res & mode  = ?
+units               = ?
+paper width         = ?
+paper height        = ?
+horizontal offset   = ?
+vertical offset     = ?
+show statistics     = ?
+reverse page order  = ?
+conserve VM         = ?
+manual feed         = ?
+reserved            = ?
+Help folder         = ?
+FMT folder          = ?
+TeX input folder(s) = ?
+TFM folder(s)       = ?
+PK folder(s)        = ?
+%
+% You will need to change the last path name given below.
+% It tells OzTeX where to find the font files that must be downloaded
+% when printing to a PostScript device.  You might prefer to specify all
+% these paths in your Default config file.
+% Note that font files are normally kept in the Fonts sub-folder of your
+% System folder in System 7.1 (or in the Extensions sub-folder in 7.0).
+%
+PS folder(s)        = :PS-files: :PS-files:Encodings: "HD:System:Fonts:"
+Text-to-PS prolog   = ?
+DVI-to-PS prolog    = ?
+VF folder(s)        = ?
+global PS file      = ?
+Save OzTeX output   = ?
+missing fonts file  = ?
+pool file           = ?
+dummy TFM file      = ?
+dummy screen font   = ?
+paper edges         = ?
+\special markers    = ?
+missing fonts       = ?
+mem_max             = ?
+font_max            = ?
+font_mem_size       = ?
+max_strings         = ?
+string_vacancies    = ?
+pool_size           = ?
+buf_size            = ?
+stack_size          = ?
+max_in_open         = ?
+param_size          = ?
+nest_size           = ?
+save_size           = ?
+trie_size           = ?
+trie_op_size        = ?
+mem_top             = ?
+hash_size           = ?
+hash_prime          = ?
+hyph_size           = ?
+mem_min             = ?
+error_line          = ?
+half_error_line     = ?
+max_print_line      = ?
+%
+%  AMS FONTS
+%
+% Lots of fonts make OzTeX start up much slower, but you
+% can remove fonts from the Font menu by putting a "%" in front of the
+% name.  You can make the fonts appear at the bottom of the font menu
+% by putting a "~" in front of the name.
+% After editing all the screen font names listed below you must also use
+% ResEdit to change the "~" to "%" in the font names stored in the TrueType
+% suitcase files:
+% 
+% 1. Start up ResEdit and open a suitcase file (like cmr.mrf).
+% 2. Double click on the FOND resource.
+% 3. Choose Select All (or type Command-A).
+% 4. Choose Get Info (or type Command-I).
+% 5. Put a "%" in front of each name in the Name field.
+% 6. Save and close the file.
+% 
+% OzTeX will still be able to find these "hidden" fonts for previewing and
+% non-PostScript printing, but most other applications will probably not.
+%
+%	TFM		Printer font	Download		Screen font		Encoding
+%
+=+	(this tells OzTeX to update the current font list)
+=	euex10	euex10			<euex10		%euex10			BaKoMaAMS.enc
+=	euex7		euex7				<euex7		%euex7			BaKoMaAMS.enc
+=	euex8		euex8				<euex8		%euex8			BaKoMaAMS.enc
+=	euex9		euex9				<euex9		%euex9			BaKoMaAMS.enc
+=	eufb10	eufb10			<eufb10		%eufb10			BaKoMaAMS.enc
+=	eufb5		eufb5				<eufb5		%eufb5			BaKoMaAMS.enc
+=	eufb6		eufb6				<eufb6		%eufb6			BaKoMaAMS.enc
+=	eufb7		eufb7				<eufb7		%eufb7			BaKoMaAMS.enc
+=	eufb8		eufb8				<eufb8		%eufb8			BaKoMaAMS.enc
+=	eufb9		eufb9				<eufb9		%eufb9			BaKoMaAMS.enc
+=	eufm10	eufm10			<eufm10		%eufm10			BaKoMaAMS.enc
+=	eufm5		eufm5				<eufm5		%eufm5			BaKoMaAMS.enc
+=	eufm6		eufm6				<eufm6		%eufm6			BaKoMaAMS.enc
+=	eufm7		eufm7				<eufm7		%eufm7			BaKoMaAMS.enc
+=	eufm8		eufm8				<eufm8		%eufm8			BaKoMaAMS.enc
+=	eufm9		eufm9				<eufm9		%eufm9			BaKoMaAMS.enc
+=	eurb10	eurb10			<eurb10		%eurb10			BaKoMaAMS.enc
+=	eurb5		eurb5				<eurb5		%eurb5			BaKoMaAMS.enc
+=	eurb6		eurb6				<eurb6		%eurb6			BaKoMaAMS.enc
+=	eurb7		eurb7				<eurb7		%eurb7			BaKoMaAMS.enc
+=	eurb8		eurb8				<eurb8		%eurb8			BaKoMaAMS.enc
+=	eurb9		eurb9				<eurb9		%eurb9			BaKoMaAMS.enc
+=	eurm10	eurm10			<eurm10		%eurm10			BaKoMaAMS.enc
+=	eurm5		eurm5				<eurm5		%eurm5			BaKoMaAMS.enc
+=	eurm6		eurm6				<eurm6		%eurm6			BaKoMaAMS.enc
+=	eurm7		eurm7				<eurm7		%eurm7			BaKoMaAMS.enc
+=	eurm8		eurm8				<eurm8		%eurm8			BaKoMaAMS.enc
+=	eurm9		eurm9				<eurm9		%eurm9			BaKoMaAMS.enc
+=	eusb10	eusb10			<eusb10		%eusb10			BaKoMaAMS.enc
+=	eusb5		eusb5				<eusb5		%eusb5			BaKoMaAMS.enc
+=	eusb6		eusb6				<eusb6		%eusb6			BaKoMaAMS.enc
+=	eusb7		eusb7				<eusb7		%eusb7			BaKoMaAMS.enc
+=	eusb8		eusb8				<eusb8		%eusb8			BaKoMaAMS.enc
+=	eusb9		eusb9				<eusb9		%eusb9			BaKoMaAMS.enc
+=	eusm10	eusm10			<eusm10		%eusm10			BaKoMaAMS.enc
+=	eusm5		eusm5				<eusm5		%eusm5			BaKoMaAMS.enc
+=	eusm6		eusm6				<eusm6		%eusm6			BaKoMaAMS.enc
+=	eusm7		eusm7				<eusm7		%eusm7			BaKoMaAMS.enc
+=	eusm8		eusm8				<eusm8		%eusm8			BaKoMaAMS.enc
+=	eusm9		eusm9				<eusm9		%eusm9			BaKoMaAMS.enc
+=	msam10	msam10			<msam10		%msam10			BaKoMaAMS.enc
+=	msam5		msam5				<msam5		%msam5			BaKoMaAMS.enc
+=	msam6		msam6				<msam6		%msam6			BaKoMaAMS.enc
+=	msam7		msam7				<msam7		%msam7			BaKoMaAMS.enc
+=	msam8		msam8				<msam8		%msam8			BaKoMaAMS.enc
+=	msam9		msam9				<msam9		%msam9			BaKoMaAMS.enc
+=	msbm10	msbm10			<msbm10		%msbm10			BaKoMaAMS.enc
+=	msbm5		msbm5				<msbm5		%msbm5			BaKoMaAMS.enc
+=	msbm6		msbm6				<msbm6		%msbm6			BaKoMaAMS.enc
+=	msbm7		msbm7				<msbm7		%msbm7			BaKoMaAMS.enc
+=	msbm8		msbm8				<msbm8		%msbm8			BaKoMaAMS.enc
+=	msbm9		msbm9				<msbm9		%msbm9			BaKoMaAMS.enc
+%
+@
+@
+@                        *** WARNING ***
+@
+@   You must change the list of PS folders in this config file
+@   to tell OzTeX where to find files for downloading fonts to
+@   a PostScript printer.
+%
+% After doing so, change the above "@" chars to "%".
+==
+
+(OzTeX ignores everything after the "==".)
