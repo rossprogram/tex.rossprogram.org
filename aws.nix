@@ -18,6 +18,7 @@ in
     rules = [
       { toPort = 22; fromPort = 22; sourceIp = "0.0.0.0/0"; } # SSH
       { toPort = 80; fromPort = 80; sourceIp = "0.0.0.0/0"; } # HTTP
+      { toPort = 443; fromPort = 443; sourceIp = "0.0.0.0/0"; } # HTTPS
     ];
   };
 
@@ -34,7 +35,7 @@ in
     deployment.ec2.accessKeyId = awsKeyId;
     deployment.ec2.region = region;
     deployment.ec2.instanceType = "t2.micro"; # a cheap one
-    deployment.ec2.ebsInitialRootDiskSize = 10; # GB
+    deployment.ec2.ebsInitialRootDiskSize = 20; # GB
     deployment.ec2.keyPair = resources.ec2KeyPairs.myKeyPair;
     deployment.ec2.associatePublicIpAddress = true;
     deployment.ec2.securityGroups = [ resources.ec2SecurityGroups.openPorts.name ];
@@ -56,15 +57,23 @@ in
       recommendedTlsSettings = true;
     };
 
-    services.nginx.virtualHosts."tex.rossprogram.org" = {
+    services.nginx.virtualHosts."tex-backend.rossprogram.org" = {
+      forceSSL = true;
+      enableACME = true;
       default = true;
-      root = "/var/www/tex.rossprogram.org";
+      root = "/var/www/tex-backend.rossprogram.org";
       locations = {
         "/".proxyPass = "http://localhost:${config.systemd.services.node.environment.PORT}/";
         "/".proxyWebsockets = true;
       };
     };
-        
+
+    security.acme.acceptTerms = true;
+    
+    security.acme.certs = {
+      "tex-backend.rossprogram.org".email = "fowler@rossprogram.org";
+    };
+    
     systemd.services.node = {
       description = "node service";
       
@@ -93,7 +102,7 @@ in
       node = { };
     };
     
-    networking.firewall.allowedTCPPorts = [ 80 ];
+    networking.firewall.allowedTCPPorts = [ 80 443 ];
   };
 }
 

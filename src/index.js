@@ -35,7 +35,7 @@ worker.onmessage = function (event) {
 
 let WsUrl = 'ws://' + window.location.host;
 if (window.location.protocol === 'https:') {
-  WsUrl = 'wss://' + window.location.host;
+  WsUrl = 'wss://tex-backend.rossprogram.org';
 }
 
 function compile(source) {
