@@ -1,6 +1,6 @@
-# tex.rossprogram.org
+# [tex.rossprogram.org](https://tex.rossprogram.org/)
 
-This is a live demo of the JavaScript-based TeX compiler and DVI viewer discussed in:
+This is a [live demo](https://tex.rossprogram.org/) of the JavaScript-based TeX compiler and DVI viewer discussed in:
 
 > [J. Fowler, *Both TEX and DVI viewers inside the
 web browser*, TUGboat, Volume 40 (2019), No. 1](https://www.tug.org/TUGboat/tb40-1/tb124fowler-js.pdf).
