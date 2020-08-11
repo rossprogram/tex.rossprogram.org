@@ -182,7 +182,7 @@ function main(docid) {
     toolbar.style.opacity = 1;
   };
   
-  document.addEventListener('keyup', function(e) {
+  document.addEventListener('keydown', function(e) {
     if (e.keyCode === 13) {
       if (e.ctrlKey || e.altKey || e.metaKey) {
         compile(editor.getValue());
