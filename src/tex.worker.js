@@ -47,7 +47,7 @@ function copy(src)  {
 }
 
 async function compile(callback) {
-    const memory = new WebAssembly.Memory({ initial: pages, maximum: pages });
+  const memory = new WebAssembly.Memory({ initial: pages, maximum: pages });
   
   const buffer = new Uint8Array(memory.buffer, 0, pages * 65536);
   buffer.set(copy(coredump));
@@ -97,12 +97,25 @@ onmessage = async function(e) {
   library.deleteEverything();
   library.setTexput(source);
   library.setTexmfExtra(texmf);
-
+  library.setTexputAux(new Uint8Array());
+  
   library.setConsoleWriter((x) => {
     postMessage({text: x});
   });
 
   compile( function (err, dvi) {
-    postMessage({dvi: dvi});
+    if (err) {
+    } else {
+      const aux = library.readFileSync('texput.aux');
+      library.deleteEverything();
+      library.setTexput(source);
+      library.setTexputAux(aux);
+      compile( function (err, dvi) {
+        if (err) {
+        } else {
+          postMessage({dvi: dvi});
+        }
+      });
+    }
   });
 }

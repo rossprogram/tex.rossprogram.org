@@ -1,6 +1,6 @@
 {
   "name": "tex.rossprogram.org",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "A real-time collaborative TeX editor",
   "main": "src/index.js",
   "bin": "server/index.js",

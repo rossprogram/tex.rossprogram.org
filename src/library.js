@@ -20,6 +20,7 @@ let files = [];
 let urlRoot = '';
 let currentDirectory = '';
 let texput;
+let texputaux = undefined;
 let texmf = {};
 
 export function deleteEverything() {
@@ -28,6 +29,11 @@ export function deleteEverything() {
 
 export function setTexput(buffer) {
   texput = Buffer.from(buffer);
+}
+
+export function setTexputAux(buffer) {
+  console.log("settexput",buffer);
+  texputaux = buffer;
 }
 
 export function setTexmfExtra(t) {
@@ -47,8 +53,10 @@ export function writeFileSync(filename, buffer) {
 export function readFileSync(filename) {
   for (const f of files) {
     if (f.filename == filename) {
-      if (f.buffer) return f.buffer.slice(0, f.position);
-      throw Error(`Missing buffer for filename ${f.filename}`);
+      if (f.position != 0) {
+        if (f.buffer) return f.buffer.slice(0, f.position);
+        throw Error(`Missing buffer for filename ${f.filename}`);
+      }
     }
   }
 
@@ -64,7 +72,25 @@ function openSync(filename, mode) {
     filename = filename.replace(/"/g, '');
   }
 
-  if ((filename === 'texput.aux') || (filename === 'texput.dvi')) {
+  if (filename === 'texput.aux') {
+    let buffer = new Uint8Array();
+    if (texputaux) {
+      console.log("BUFFER=",buffer);
+      buffer = new Uint8Array(texputaux);
+    }
+    
+    files.push({
+      filename,
+      position: 0,
+      erstat: 0,
+      buffer: buffer,
+      descriptor: files.length,
+    });
+    console.log('opened with handle',files.length - 1);
+    return files.length - 1;
+  }
+
+  if (filename === 'texput.dvi') {
     files.push({
       filename,
       position: 0,
@@ -72,9 +98,10 @@ function openSync(filename, mode) {
       buffer: new Uint8Array(),
       descriptor: files.length,
     });
+    console.log('opened with handle',files.length - 1);
     return files.length - 1;
   }
-  
+
   if (filename === 'texput.tex') {
     files.push({
       filename,
@@ -83,10 +110,11 @@ function openSync(filename, mode) {
       buffer: new Uint8Array(texput),
       descriptor: files.length,
     });
+    console.log('opened with handle',files.length - 1);
     return files.length - 1;
   }
 
-  if (texmf[filename]) {
+    if (texmf[filename]) {
     const enc = new TextEncoder(); // always utf-8
 
     files.push({
@@ -96,6 +124,7 @@ function openSync(filename, mode) {
       buffer: enc.encode(texmf[filename]),
       descriptor: files.length,
     });
+    console.log('opened with handle',files.length - 1);
     return files.length - 1;    
   }
   
