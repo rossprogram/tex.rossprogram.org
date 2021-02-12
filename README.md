@@ -9,3 +9,6 @@ In particular, it uses [web2js](https://github.com/kisonecat/web2js) to compile 
 
 The real-time collaborative features are made possible by [ShareDB](https://github.com/share/sharedb), and the [Ace Editor](https://ace.c9.io/) is used with its TeX language support.
 
+# Running development version
+
+Deploy the frontend via `yarn run start` and the backend via `node server/index.js`.

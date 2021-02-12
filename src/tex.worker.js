@@ -1,12 +1,12 @@
-import texCorePath from '../tex/core.4b580e5b16c4.dump.gz';
-import texBinaryPath from '../tex/out.8c3fe3450cb5.wasm';
+import texCorePath from '../tex/core.b555c64c84cf.dump.gz';
+import texBinaryPath from '../tex/out.f9c8838f85a0.wasm';
 import * as library from './library';
 
 import pako from 'pako';
 import { ReadableStream } from "web-streams-polyfill";
 import fetchStream from 'fetch-readablestream';
 
-let pages = 1500;
+let pages = 2500;
 
 var coredump;
 var code;
@@ -50,6 +50,7 @@ async function compile(callback) {
   const memory = new WebAssembly.Memory({ initial: pages, maximum: pages });
   
   const buffer = new Uint8Array(memory.buffer, 0, pages * 65536);
+  console.log('about to copy');
   buffer.set(copy(coredump));
   
   library.setMemory(memory.buffer);
@@ -61,6 +62,7 @@ async function compile(callback) {
   library.setCallback(() => {
     const filename = 'texput.dvi';
     //let data = library.readFileSync( filename )
+    console.log('Trying to read output...');
     const data = library.readFileSync('texput.dvi');
     //self.postMessage({ dvi: data }, [data.buffer]);
     console.log('**** DONE');
