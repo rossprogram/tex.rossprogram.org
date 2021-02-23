@@ -1,14 +1,26 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
+  plugins: [
+    new HtmlWebpackPlugin({title: "Ximera",
+                           template: 'src/index.html',
+                           minify: {
+                             collapseWhitespace: true,
+                             removeComments: true
+                           }
+                          }),
+    new MiniCssExtractPlugin({
+      filename: '[name].[contenthash].css',
+    }),    
+  ],
   entry: './src/index.js',
+  mode: "development",
+  devtool: 'inline-source-map',  
   output: {
-    filename: 'main.js',
+    filename: 'main.[chunkhash].js',
     path: path.resolve(__dirname, 'dist'),
-  },
-  devServer: {
-    contentBase: './dist',
-    port: 9000
   },
   module: {
     defaultRules: [
@@ -57,6 +69,10 @@ module.exports = {
             }
           }
         ]
+      },
+      {
+        test: /\.css$/i,
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
     ],
   },

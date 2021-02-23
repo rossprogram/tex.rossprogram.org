@@ -1,43 +1,44 @@
-#!/usr/bin/env node
+#!/usr/bin/env -S node --experimental-modules
 
-require('dotenv').config();
-var http = require('http');
-var path = require('path');
-var ShareDB = require('sharedb');
-var express = require('express');
-var WebSocketJSONStream = require('@teamwork/websocket-json-stream');
-var WebSocket = require('ws');
+import http from 'http';
+import express from 'express';
+import * as github from './github.js';
 
-// Start ShareDB
-const db = require('sharedb-mongo')('mongodb://localhost:' +
-                                    process.env.MONGODB_PORT + '/' +
-                                    process.env.MONGODB_DATABASE,
-                                    {mongoOptions: { useUnifiedTopology: true } });
-const share = new ShareDB({db});
+import dotenv from 'dotenv'
+dotenv.config();
 
-var connection = share.connect();
+import path from 'path';
+import { fileURLToPath } from 'url';
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-// Create a WebSocket server
 var app = express();
 
 app.use(express.static(path.resolve(__dirname, '../dist')));
-app.use('/texmf', express.static(process.env.TEXMF));
-app.use('/local-texmf', express.static(path.resolve(__dirname, '../local-texmf')));
 
-var server = http.createServer(app);
-var wss = new WebSocket.Server({server: server});
+app.use(`/${process.env.TEXLIVE_VERSION}/texmf`,
+	(req, res, next) => {
+	  const oneYear = 365 * 24 * 60 * 60;
+	  res.setHeader('Cache-Control', 'max-age=' + oneYear + ', immutable');
+	  next();
+	},
+	express.static(process.env.TEXMF) );
+
+app.use('/texmf-local', express.static(path.resolve(__dirname, '../texmf-local')));
+
+app.get('/:owner/:repo/:path(*.tex)', github.getRepository, github.get );
+app.get('/:owner/:repo/:path(*.dvi)', github.getRepository, github.get );
+app.get('/:owner/:repo/:path(*.png)', github.getRepository, github.get );
+
+app.get('/', function (request, response) {
+  response.sendFile(path.resolve(__dirname, '../dist/index.html'));
+  
+});
 
 app.get('*', function (request, response) {
   response.sendFile(path.resolve(__dirname, '../dist/index.html'));
 });
 
 let port = process.env.PORT;
-
+var server = http.createServer(app);
 server.listen(port);
 console.log('Listening on http://localhost:' + port.toString());
-
-// Connect any incoming WebSocket connection with ShareDB
-wss.on('connection', function(ws) {
-  var stream = new WebSocketJSONStream(ws);
-  share.listen(stream);
-});
