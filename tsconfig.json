@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "removeComments": true,    
+    "declaration": true,
+    "outDir": "dist",
+    "strict": true,
+    "lib": ["es2018", "dom", "webworker"],
+    "module": "commonjs",
+    "esModuleInterop": true,    
+    "resolveJsonModule": true,
+    "noImplicitAny": false,
+    "jsx": "react",
+    "jsxFactory": "Snabbdom.createElement",
+    "paths": {
+      "snabbdom/*": ["./node_modules/snabbdom/build/package/*"]
+    }
+  },
+  "include": ["src",  "src/custom.d.ts"]
+}

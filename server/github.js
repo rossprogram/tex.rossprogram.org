@@ -22,7 +22,7 @@ export async function getRepository(req, res, next) {
       });
 
       if (repo.data) {
-        client.setex( key, 300, JSON.stringify(repo) );
+        client.setex( key, 300, JSON.stringify(repo.data) );
         req.repository = repo.data;
       }
     } else {
@@ -36,10 +36,12 @@ export async function getRepository(req, res, next) {
 }
 
 export async function get(req, res, next) {
+  const path = `${req.repository.full_name}/${req.repository.default_branch}/${req.params.path}`;
+  
   let options = {
     host: 'raw.githubusercontent.com',
     port: 443,
-    path: `${req.repository.full_name}/${req.repository.default_branch}/${req.params.path}`,
+    path,
     headers: {
       'Authorization': 'Basic ' + process.env.GITHUB_ACCESS_TOKEN
     }   
@@ -48,10 +50,13 @@ export async function get(req, res, next) {
   const request = https.get(options, function(response) {
     const contentType = response.headers['content-type'];
 
-    res.setHeader('Content-Type', contentType);
-    res.setHeader('Cache-Control', 'public, max-age=600');
-    
-    response.pipe(res);
+    if (response.statusCode === 200) {
+      res.setHeader('Content-Type', contentType);
+      res.setHeader('Cache-Control', 'public, max-age=600');
+      response.pipe(res);
+    } else {
+      res.sendStatus(response.statusCode);
+    }
   });
 
   request.on('error', function(e){

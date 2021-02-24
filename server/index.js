@@ -13,27 +13,34 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 var app = express();
 
-app.use(express.static(path.resolve(__dirname, '../dist')));
+import morgan from 'morgan';
+app.use(morgan('combined'))
 
-app.use(`/${process.env.TEXLIVE_VERSION}/texmf`,
-	(req, res, next) => {
-	  const oneYear = 365 * 24 * 60 * 60;
-	  res.setHeader('Cache-Control', 'max-age=' + oneYear + ', immutable');
-	  next();
-	},
-	express.static(process.env.TEXMF) );
+let optionsStatic = {
+  immutable: true,
+  maxAge: 365 * 24 * 60 * 60 * 1000
+};
 
-app.use('/texmf-local', express.static(path.resolve(__dirname, '../texmf-local')));
-
-app.get('/:owner/:repo/:path(*.tex)', github.getRepository, github.get );
-app.get('/:owner/:repo/:path(*.dvi)', github.getRepository, github.get );
-app.get('/:owner/:repo/:path(*.png)', github.getRepository, github.get );
+// This is not hashed, but who cares if the favicon is immutable
+app.use('/favicon.ico', express.static(path.resolve(__dirname, '../public/favicon/favicon.ico'), optionsStatic ));
 
 app.get('/', function (request, response) {
   response.sendFile(path.resolve(__dirname, '../dist/index.html'));
-  
 });
 
+app.use(express.static(path.resolve(__dirname, '../dist'), optionsStatic ));
+app.use(`/${process.env.TEXLIVE_VERSION}/texmf`,
+	express.static(process.env.TEXMF, optionsStatic) );
+
+// FIXME: how should this be cached?
+app.use('/texmf-local', express.static(path.resolve(__dirname, '../texmf-local')));
+
+// FIXME: should include some rate-limiting
+app.get('/github/:owner/:repo/:path(*.tex)', github.getRepository, github.get );
+app.get('/github/:owner/:repo/:path(*.dvi)', github.getRepository, github.get );
+app.get('/github/:owner/:repo/:path(*.png)', github.getRepository, github.get );
+
+// FIXME: should send 'isomorphic' content 
 app.get('*', function (request, response) {
   response.sendFile(path.resolve(__dirname, '../dist/index.html'));
 });

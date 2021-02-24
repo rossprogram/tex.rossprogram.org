@@ -1,8 +1,11 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+import path from 'path';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 
-module.exports = {
+//import { fileURLToPath } from 'url';
+//const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
+export default {
   plugins: [
     new HtmlWebpackPlugin({title: "Ximera",
                            template: 'src/index.html',
@@ -15,29 +18,41 @@ module.exports = {
       filename: '[name].[contenthash].css',
     }),    
   ],
-  entry: './src/index.js',
+  entry: {
+    bundle: './src/index.tsx',
+  },  
   mode: "development",
-  devtool: 'inline-source-map',  
+  devtool: 'inline-source-map',
+  resolve: {
+    extensions: [ '.tsx', '.ts', '.js' ],
+    alias: {
+      snabbdom: path.resolve(__dirname, 'node_modules', 'snabbdom', 'build', 'package')
+    }    
+  },
   output: {
     filename: 'main.[chunkhash].js',
     path: path.resolve(__dirname, 'dist'),
+    publicPath: '/'
   },
   module: {
-    defaultRules: [
-      {
-        type: 'javascript/auto',
-        resolve: {}
-      },
-      {
-        test: /\.json$/i,
-        type: 'json'
-      }
-    ],
     rules: [
+      {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/
+      },      
       {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
       },
+      {
+        test: /\.svg$/,
+        loader: 'svg-url-loader'
+      },
+      {
+        test: /\.png$/,
+        loader: 'file-loader'
+      },      
       {
         test: /\.(wasm)$/i,
         use: [
@@ -59,13 +74,14 @@ module.exports = {
         use: { loader: 'worker-loader' }
       },
       {
-        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
         use: [
           {
             loader: 'file-loader',
             options: {
-              name: '[name].[ext]',
-              outputPath: 'fonts/'
+              name: '[name].[hash].[ext]',
+              outputPath: 'fonts/',
+              publicPath: url => `fonts/${url}`
             }
           }
         ]
